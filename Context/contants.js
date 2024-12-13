@@ -3,9 +3,9 @@ import Web3Modal from "web3modal";
 import crowdFunding from "./CrowdFunding.json";
 
 //------------POLYGON AMOY NETWORK
-export const CrowdFundingAddress = "0xFc4fFa517766c9d4BB0F8AF0Ee64a0200Fd77836";
+// export const CrowdFundingAddress = "0xFc4fFa517766c9d4BB0F8AF0Ee64a0200Fd77836";
 //------------LOCALHOST NETWORK
-// export const CrowdFundingAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+export const CrowdFundingAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 
 export const CrowdFundingABI = crowdFunding.abi;
 
@@ -107,6 +107,6 @@ const changeNetwork = async ({ networkName }) => {
 };
 
 export const handleNetworkSwitch = async () => {
-  const networkName = "polygon_amoy";
+  const networkName = "localhost";
   await changeNetwork({ networkName });
 };
